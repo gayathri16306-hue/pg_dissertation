@@ -1,0 +1,6 @@
+Flask==2.3.3
+pdfplumber
+scikit-learn
+numpy
+pytesseract
+pdf2image
