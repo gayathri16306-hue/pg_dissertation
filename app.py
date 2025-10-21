@@ -120,4 +120,8 @@ def analyze():
 if __name__ == '__main__':
     # If Tesseract is not in PATH, set it here
     # pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-    app.run(debug=True)
+    import os
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=True)
+
+
